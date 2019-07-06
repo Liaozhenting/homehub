@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/css/index.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>总共有<%= count%>部作品</p>
+    <% 
+      folderArr.map(foldername => { %>
+      <a href="./anime/?name=<%=foldername%>"><%=foldername%></a>
+    <% }) %>
+  </body>
+</html>
